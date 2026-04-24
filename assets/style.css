@@ -1,0 +1,51 @@
+/* Giao diện bảng danh sách sinh viên */
+.sm-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sm-table thead {
+    background-color: #0073aa; /* Màu xanh đặc trưng của WordPress */
+    color: #ffffff;
+}
+
+.sm-table th, 
+.sm-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+.sm-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Hiệu ứng dòng chẵn lẻ cho dễ nhìn */
+.sm-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* Hiệu ứng khi di chuột qua dòng */
+.sm-table tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: 0.3s;
+}
+
+/* Định dạng tiêu đề bảng */
+.sm-table th {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive: Tự động cuộn nếu màn hình điện thoại quá nhỏ */
+@media screen and (max-width: 600px) {
+    .sm-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
